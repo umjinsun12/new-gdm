@@ -1,0 +1,8 @@
+.border-right{
+    border-right: 1px solid #cbcbcb
+}
+
+.querybuilder-label{
+    border-bottom: 1px solid #cbcbcb;
+    padding-bottom: 5px;
+}

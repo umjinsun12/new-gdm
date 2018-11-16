@@ -1659,6 +1659,9 @@ code {
 .ct-chart {
   height: 300px;
 }
+.right-chart{
+  height: 800px;
+}
 
 .ct-grid {
   stroke: rgba(0, 0, 0, 0.09);

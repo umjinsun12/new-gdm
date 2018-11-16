@@ -142,13 +142,17 @@
                         <!-- Navigation Menu-->
                         <ul class="navigation-menu">
 
-                            <li class="has-submenu">
-                                <a href="index.html"><i class="mdi mdi-airplay"></i>Projects</a>
-                            </li>
+                                <li class="has-submenu">
+                                        <a href="index.html"><i class="mdi mdi-airplay"></i>Projects</a>
+                                    </li>
+        
+                                    <li class="has-submenu">
+                                        <a href="query-builder.html"><i class="mdi mdi-layers"></i>QueryBuilder</a>
+                                    </li>
 
-                            <li class="has-submenu">
-                                <a href="#"><i class="mdi mdi-layers"></i>QueryBuilder</a>
-                            </li>
+                                    <li class="has-submenu">
+                                            <a href="cases.html"><i class="ion-ios7-copy-outline"></i>Cases</a>
+                                    </li>
 
 
                             <!-- <li class="has-submenu">
@@ -306,23 +310,189 @@
                     <!-- end page title end breadcrumb -->
 
                 <div class="row">
-                    <!-- side bar -->
                     <div class="col-9">
                             <div class="card m-b-30">
                                 <div class="card-body">
-                                    asdasda
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-3">
-                            <div class="card m-b-30">
-                                <div class="card-body">
-                                        asdasda
-                                </div>
+                                        <!-- Nav tabs -->
+                                        <div class="row">
+                                                <div class="col-sm-9">
+                                                        0 studies selected (0 samples)
+                                                </div>
+                                                <div class="col-sm-3">
+                                                        <div class="input-group">
+                                                            <span class="input-group-prepend">
+                                                                <button type="button" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                                                            </span>
+                                                            <input type="text" id="example-input1-group2" name="example-input1-group2" class="form-control" placeholder="Search">
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                    <ul class="nav nav-tabs" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Query</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Download Data</a>
+                                                        </li>
+                                                    </ul>
+                    
+                                                    <!-- Tab panes -->
+                                                    <div class="tab-content">
+                                                        <div class="tab-pane active p-3" id="home" role="tabpanel">
+                                                                <div class="row">
+                                                                    <div class="col-3 border-right">
+                                                                        <div class="nav flex-column nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                                                <a class="nav-link waves-effect waves-light" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">PanCancer Studies (2)</a>
+                                                                                <a class="nav-link waves-effect waves-light" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Cell lines (3)</a>
+                                                                                <a class="nav-link waves-effect waves-light" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Adrenal Gland (2)</a>
+                                                                                <a class="nav-link waves-effect waves-light" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Ampulla of Vater (4)</a>
+                                                                                <a class="nav-link waves-effect waves-light" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Biliary TractS (4)</a>
+                                                                                <a class="nav-link waves-effect waves-light" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Bladder/Urinary Tract (3)</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-9">
+                                                                        <div class="form-group">
+                                                                            <div class="querybuilder-label">
+                                                                                <label>PanCancer Studies</label>
+                                                                            </div>
+                                                                            <div>
+                                                                                <div class="custom-control custom-checkbox">
+                                                                                    <input type="checkbox" class="custom-control-input" id="customCheck1" data-parsley-multiple="groups"
+                                                                                                data-parsley-mincheck="2">
+                                                                                    <div class="custom-control-label" for="customCheck1">MSK-IMPACT Clinical Sequencing Cohort (MSKCC, Nat Med 2017)</div>
+                                                                                </div>
+                                                                                <div class="custom-control custom-checkbox">
+                                                                                        <input type="checkbox" class="custom-control-input" id="customCheck1" data-parsley-multiple="groups"
+                                                                                                    data-parsley-mincheck="2">
+                                                                                        <div class="custom-control-label" for="customCheck1">Pan-Lung Cancer (TCGA, Nat Genet 2016)</div>
+                                                                                    </div>
+                                                                                <div class="custom-control custom-checkbox">
+                                                                                        <input type="checkbox" class="custom-control-input" id="customCheck1" data-parsley-multiple="groups"
+                                                                                                        data-parsley-mincheck="2">
+                                                                                        <div class="custom-control-label" for="customCheck1">Pediatric Mixed Tumors (PIP-Seq 2017)</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <div class="form-group">
+                                                                                <div class="querybuilder-label">
+                                                                                    <label>Cell lines</label>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <div class="custom-control custom-checkbox">
+                                                                                        <input type="checkbox" class="custom-control-input" id="customCheck1" data-parsley-multiple="groups"
+                                                                                                    data-parsley-mincheck="2">
+                                                                                        <div class="custom-control-label" for="customCheck1">Cancer Cell Line Encyclopedia (Novartis/Broad, Nature 2012)</div>
+                                                                                    </div>
+                                                                                    <div class="custom-control custom-checkbox">
+                                                                                            <input type="checkbox" class="custom-control-input" id="customCheck1" data-parsley-multiple="groups"
+                                                                                                        data-parsley-mincheck="2">
+                                                                                            <div class="custom-control-label" for="customCheck1">NCI-60 Cell Lines (NCI, Cancer Res. 2012)</div>
+                                                                                        </div>
+                                                                                    <div class="custom-control custom-checkbox">
+                                                                                            <input type="checkbox" class="custom-control-input" id="customCheck1" data-parsley-multiple="groups"
+                                                                                                            data-parsley-mincheck="2">
+                                                                                            <div class="custom-control-label" for="customCheck1">Pediatric Mixed Tumors (PIP-Seq 2017)</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                                <div class="querybuilder-label">
+                                                                                    <label>Bladder/Urinary Tract</label>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <div class="custom-control custom-checkbox">
+                                                                                        <input type="checkbox" class="custom-control-input" id="customCheck1" data-parsley-multiple="groups"
+                                                                                                    data-parsley-mincheck="2">
+                                                                                        <div class="custom-control-label" for="customCheck1">Bladder Cancer (MSKCC, Eur Urol 2014)</div>
+                                                                                    </div>
+                                                                                    <div class="custom-control custom-checkbox">
+                                                                                            <input type="checkbox" class="custom-control-input" id="customCheck1" data-parsley-multiple="groups"
+                                                                                                        data-parsley-mincheck="2">
+                                                                                            <div class="custom-control-label" for="customCheck1">Bladder Cancer (MSKCC, JCO 2013)</div>
+                                                                                        </div>
+                                                                                    <div class="custom-control custom-checkbox">
+                                                                                            <input type="checkbox" class="custom-control-input" id="customCheck1" data-parsley-multiple="groups"
+                                                                                                            data-parsley-mincheck="2">
+                                                                                            <div class="custom-control-label" for="customCheck1">Bladder Cancer (TCGA, Cell 2017)</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                                <div class="querybuilder-label">
+                                                                                    <label>PanCancer Studies</label>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <div class="custom-control custom-checkbox">
+                                                                                        <input type="checkbox" class="custom-control-input" id="customCheck1" data-parsley-multiple="groups"
+                                                                                                    data-parsley-mincheck="2">
+                                                                                        <div class="custom-control-label" for="customCheck1">MSK-IMPACT Clinical Sequencing Cohort (MSKCC, Nat Med 2017)</div>
+                                                                                    </div>
+                                                                                    <div class="custom-control custom-checkbox">
+                                                                                            <input type="checkbox" class="custom-control-input" id="customCheck1" data-parsley-multiple="groups"
+                                                                                                        data-parsley-mincheck="2">
+                                                                                            <div class="custom-control-label" for="customCheck1">Pan-Lung Cancer (TCGA, Nat Genet 2016)</div>
+                                                                                        </div>
+                                                                                    <div class="custom-control custom-checkbox">
+                                                                                            <input type="checkbox" class="custom-control-input" id="customCheck1" data-parsley-multiple="groups"
+                                                                                                            data-parsley-mincheck="2">
+                                                                                            <div class="custom-control-label" for="customCheck1">Pediatric Mixed Tumors (PIP-Seq 2017)</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                        <div class="form-group col-12">
+                                                                                <label>Enter Genes</label>
+                                                                                <div>
+                                                                                        <div class="form-group row">
+                                                                                                <div class="col-sm-12">
+                                                                                                    <select class="form-control">
+                                                                                                        <option>Select</option>
+                                                                                                        <option>Prostate Cancer: AR Signaling (10 genes)</option>
+                                                                                                        <option>Ovarian Cancer: Oncogenes associated with epithelial ovarian cancer (17 genes)</option>
+                                                                                                    </select>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                    <textarea required class="form-control" rows="5"></textarea>
+                                                                                    
+                                                                                    <span class="input-group-append mt-2">
+                                                                                        <a href="query-builder-detail.html"><button type="button" class="btn btn-primary">Submit</button></a>
+                                                                                    </span>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+
+                                                        </div>
+                                                    </div>
+
+
+                                                    
+                                        </div>
+                                    </div>
                             </div>
                     </div>
                 </div>
 
+                <!-- side bar -->
+                <div class="col-3">
+                        <div class="card m-b-30">
+                            <div class="card-body">
+                                    <label>Cancer Studies</label>
+                                    <div id="overlapping-bars" class="right-chart ct-golden-section"></div>
+                            </div>
+                        </div>
+                </div>
 
                 </div>
 

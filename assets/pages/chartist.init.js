@@ -221,15 +221,19 @@ new Chartist.Line('#chart-with-area', {
 //Overlapping bars on mobile
 
 var data = {
-  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+  labels: ['Breast', 'Lung', 'CNS/Brain', 'Lymphoid', 'Prostate', 'Bowel', 'Stomach', 'Bladder', 'Utterus', 'Head/Neck', 'Ovary', 'Myelod','Thyroid', 'PNS','Skin', 'Liver', 'Pancreas','Soft Tissue'],
   series: [
-    [5, 4, 3, 7, 5, 10, 3, 4, 8, 10, 6, 8],
-    [3, 2, 9, 5, 4, 6, 4, 6, 7, 8, 7, 4]
+    [5, 4, 3, 7, 5, 10, 3, 4, 8, 10, 6, 8, 7, 9, 10, 1, 2, 3, 9, 8]
   ]
 };
 
 var options = {
-  seriesBarDistance: 10
+  seriesBarDistance: 40,
+  horizontalBars: true,
+  height : 800,
+  axisY: {
+    offset: 80
+  }
 };
 
 var responsiveOptions = [
