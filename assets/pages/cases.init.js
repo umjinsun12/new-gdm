@@ -42,6 +42,9 @@
                 case 'PolarArea':
                     new Chart(ctx, {data: data, type: 'polarArea', options: options});
                     break;
+                case 'Bubble':
+                    new Chart(ctx, {data: data, type: 'bubble', options: options});
+                    break;
             }
             // Initiate new chart or Redraw
 
@@ -134,7 +137,142 @@
                     hoverBorderColor: "#fff"
                 }]
         };
-        //this.respChart($("#doughnut"),'Doughnut',donutChart);
+
+
+        
+
+        var bubbleChart = {
+            labels: "Radiation",
+            datasets: [
+                {
+                    label: ["Radiation"],
+                    backgroundColor: "rgba(255,221,50,0.2)",
+                    borderColor: "rgba(255,221,50,1)",
+                    data: [
+                        {
+                      x: 180801,
+                      y: 1,
+                      r: 0
+                    },{
+                      x: 180818,
+                      y: 1,
+                      r: 10
+                    },
+                    {
+                        x: 180819,
+                        y: 1,
+                        r: 10
+                    },
+                    {
+                        x: 180820,
+                        y: 1,
+                        r: 10
+                    },{
+                        x: 180901,
+                        y: 1,
+                        r: 0
+                      }]
+                  }]
+        }
+
+        var options = {
+            scales: {
+              yAxes: [{
+                ticks: {
+                    display: false
+                },
+                gridLines: {
+                  drawBorder: false,
+                  display: false
+                },
+              }]
+            }
+          }
+
+        this.respChart($("#bubble"),'Bubble',bubbleChart, options);
+
+
+
+        var bubbleChart2 = {
+            labels: "Radiation",
+            datasets: [
+                {
+                    label: ["Inpatient"],
+                    backgroundColor: "green",
+                    borderColor: "green",
+                    data: [
+                        {
+                      x: 180801,
+                      y: 1.5,
+                      r: 10
+                    },{
+                      x: 180818,
+                      y: 1.5,
+                      r: 10
+                    },
+                    {
+                        x: 180819,
+                        y: 1.5,
+                        r: 10
+                    },
+                    {
+                        x: 180820,
+                        y: 1.5,
+                        r: 10
+                    },{
+                        x: 180901,
+                        y: 1.5,
+                        r: 10
+                      }]
+                  },
+                  {
+                    label: ["Outpatient"],
+                    backgroundColor: "blue",
+                    borderColor: "blue",
+                    data: [
+                        {
+                      x: 180804,
+                      y: 0.5,
+                      r: 10
+                    },{
+                      x: 180816,
+                      y: 0.5,
+                      r: 10
+                    },
+                    {
+                        x: 180819,
+                        y: 0.5,
+                        r: 10
+                    },
+                    {
+                        x: 180820,
+                        y: 0.5,
+                        r: 10
+                    },{
+                        x: 180901,
+                        y: 0.5,
+                        r: 10
+                      }]
+                  }]
+        }
+
+        var options2 = {
+            scales: {
+              yAxes: [{
+                ticks: {
+                    display: false
+                },
+                gridLines: {
+                  drawBorder: false,
+                  display: false
+                },
+              }]
+            }
+          }
+
+        this.respChart($("#bubble2"),'Bubble',bubbleChart2, options2);
+
+
 
 
         //Pie chart
